@@ -1,0 +1,6 @@
+window.REACT_APP_API_KEY = "AIzaSyCDFFutlnCYU6Fw0HVQWHOJw7nWcE4f92E"
+window.REACT_APP_AUTH_DOMAIN = "link-shrink-125b2.firebaseapp.com"
+window.REACT_APP_PROJECT_ID = "link-shrink-125b2"
+window.REACT_APP_STORAGE_BUCKET = "link-shrink-125b2.appspot.com"
+window.REACT_APP_MESSAGING_SENDER_ID = "307666355656"
+window.REACT_APP_APP_ID = "1:307666355656:web:45d3470e5739b579916cfd"
