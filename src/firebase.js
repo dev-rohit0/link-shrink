@@ -2,15 +2,15 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
-
+const process = require('dotenv').config()
 
 const firebaseConfig = {
-  apiKey: window.REACT_APP_API_KEY,
-  authDomain: window.REACT_APP_AUTH_DOMAIN,
-  projectId: window.REACT_APP_PROJECT_ID,
-  storageBucket: window.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: window.REACT_APP_MESSAGING_SENDER_ID,
-  appId: window.REACT_APP_APP_ID
+  apiKey: "AIzaSyCDFFutlnCYU6Fw0HVQWHOJw7nWcE4f92E",
+  authDomain: "link-shrink-125b2.firebaseapp.com",
+  projectId: "link-shrink-125b2",
+  storageBucket: "link-shrink-125b2.appspot.com",
+  messagingSenderId: "307666355656",
+  appId: "1:307666355656:web:45d3470e5739b579916cfd"
 };
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);

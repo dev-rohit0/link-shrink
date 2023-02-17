@@ -124,7 +124,9 @@ const Output = () => {
                     <td className="border-r border-t px-4 py-2  text-blue-500 underline hover:cursor-pointer">
                       <a href={`${link.original_link}`} target='_blank'>{link.original_link}</a>
                     </td>
-                    <td className="border-t  px-4 py-2 hidden sm:block text-blue-500 underline hover:cursor-pointer"><a href={link.short_link} target='_blank'>{link.short_link}</a></td>
+                    <td className="border-t  px-4 py-2 hidden sm:block text-blue-500 underline hover:cursor-pointer">
+                    <a href={`https://${link.short_link}`} target='_blank'>{link.short_link}</a>
+                    </td>
                     <td className="border-l border-t px-2 py-2 sm:px-4">
                       <button
                         className="px-2 py-1 bg-purple-500 hover:bg-purple-700 rounded-md"
