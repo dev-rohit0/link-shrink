@@ -5,7 +5,7 @@ const ProtectedRoute = ({children}) => {
     const navigate = useNavigate()
     const {user} = UserAuth();
     if (!user){
-        return navigate('/')
+        return navigate('https://link-shrink.vercel.app/')
     }
     
   return children 
