@@ -104,7 +104,7 @@ const Output = () => {
   return (
     <>
       
-      {isLoading && <div className="flex justify-center"> <SpinnerCircular></SpinnerCircular></div>}
+      {/* {isLoading && <div className="flex justify-center"> <SpinnerCircular></SpinnerCircular></div>} */}
       
 
       {!isLoading && (
@@ -121,13 +121,13 @@ const Output = () => {
               <tbody>
                 {urlList.map((link) => (
                   <tr key={link.id}>
-                    <td className="border-r border-t px-4 py-2  text-blue-500 underline hover:cursor-pointer">
+                    <td className="border-r border-t px-4 py-2  text-blue-500 underline hover:cursor-pointer text-center ">
                       <a href={`${link.original_link}`} target='_blank'>{link.original_link}</a>
                     </td>
-                    <td className="border-t  px-4 py-2 hidden sm:block text-blue-500 underline hover:cursor-pointer">
+                    <td className="border-t  px-4 py-2 hidden sm:block text-blue-500 underline hover:cursor-pointer text-center">
                     <a href={`https://${link.short_link}`} target='_blank'>{link.short_link}</a>
                     </td>
-                    <td className="border-l border-t px-2 py-2 sm:px-4">
+                    <td className="border-l border-t px-2 py-2 sm:px-4 text-center">
                       <button
                         className="px-2 py-1 bg-purple-500 hover:bg-purple-700 rounded-md"
                         value={link.short_link}
