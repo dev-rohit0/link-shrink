@@ -3,6 +3,7 @@ import { UserAuth } from "../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 import { collection, addDoc, waitForPendingWrites, setDoc } from "firebase/firestore"; 
 import { db } from "../firebase";
+import BG from '../assets/signBG.svg'
 const Signup = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -31,7 +32,7 @@ const Signup = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-center h-screen bg-[url('https://images.unsplash.com/photo-1606926693780-ec99c3f747f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bGlua3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60')]">
+      <div className="flex items-center justify-center h-screen bg-cover bg-center" style={{backgroundImage: `url(${BG})`}}>
         <div className="bg-gray-800 flex flex-col w-80 border border-gray-900 rounded-lg px-8 py-10">
           <div className="text-white mt-10">
             <h1 className="font-bold text-4xl">Welcome</h1>
@@ -42,13 +43,13 @@ const Signup = () => {
             <input
               type="text"
               placeholder="Email"
-              className="border rounded-lg py-3 px-3 bg-gray-700 border-gray-700 placeholder-gray-500"
+              className="border text-white rounded-lg py-3 px-3 bg-gray-700 border-gray-700 placeholder-gray-500"
               onChange={(e)=> setEmail(e.target.value)}
             />
             <input
               type="password"
               placeholder="Password"
-              className="border rounded-lg py-3 px-3 bg-gray-700 border-gray-700 placeholder-gray-500"
+              className="border rounded-lg py-3 px-3 bg-gray-700 border-gray-700 placeholder-gray-500 text-white"
               onChange={(e)=> setPassword(e.target.value)}
             />
             <button className="border border-blue-500 bg-blue-500 text-white rounded-lg py-3 font-semibold">

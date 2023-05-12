@@ -21,7 +21,8 @@ const Account = () => {
       
         <button
           onClick={handleLogout}
-          className="bg-purple-600 font-bold px-2 py-1 rounded-md text-white my-1 shadow-3xl hover:bg-purple-700 hover:animate-bounce hover:duration-500"
+          className="bg-purple-800
+          hover:bg-purple-900 font-bold px-2 py-1 rounded-md text-white my-1 shadow-3xl  hover:animate-bounce hover:duration-500"
         >
           Logout
         </button>
